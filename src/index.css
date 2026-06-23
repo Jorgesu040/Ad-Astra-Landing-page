@@ -1,3 +1,55 @@
 @import "tailwindcss";
 
+@theme {
+  --color-astra-blue: #4c52b3;
+  --color-astra-blue-medium: #8288e9;
+  --color-astra-blue-light: #b9beff;
+  --color-astra-cream: #feffee;
+  --color-astra-navy: #2f3367;
+  --color-astra-yellow: #ffdb5a;
 
+  --color-brand-primary: var(--color-astra-blue);
+  --color-brand-secondary: var(--color-astra-blue-medium);
+  --color-brand-soft: var(--color-astra-blue-light);
+  --color-brand-surface: var(--color-astra-cream);
+  --color-brand-ink: var(--color-astra-navy);
+  --color-brand-accent: var(--color-astra-yellow);
+
+  --font-astra-display: "Wild World", "Arial Black", Impact, system-ui, sans-serif;
+  --font-astra-serif: "Bodoni 72", "Bodoni 72 Smallcaps", "Bodoni MT", Didot, "Bodoni Moda", Georgia, serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    background: var(--color-brand-surface);
+    color: var(--color-brand-ink);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  html {
+    min-width: 320px;
+    background: var(--color-brand-surface);
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--color-brand-surface);
+    color: var(--color-brand-ink);
+    font-family: var(--font-astra-serif);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-brand-primary);
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-brand-accent) 72%, transparent);
+    color: var(--color-brand-ink);
+  }
+}
