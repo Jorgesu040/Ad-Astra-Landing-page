@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Wild World";
+  src: url("./assets/fonts/wild-world.otf") format("opentype");
+}
+
 @theme {
   --color-astra-blue: #4c52b3;
   --color-astra-blue-medium: #8288e9;
@@ -46,6 +51,8 @@
   h3,
   h4 {
     color: var(--color-brand-primary);
+    font-family: var(--font-astra-display);
+    text-transform: uppercase;
   }
 
   ::selection {
@@ -53,3 +60,16 @@
     color: var(--color-brand-ink);
   }
 }
+
+@keyframes astra-footer-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes astra-footer-orbit-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+

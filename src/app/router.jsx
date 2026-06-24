@@ -1,5 +1,16 @@
 import { createBrowserRouter } from "react-router";
 
+import ErrorPage from "../components/ErrorPage.jsx";
+import RootLayout from "../components/layout/RootLayout.jsx";
+import HomePage from "../routes/home/HomePage.jsx";
+import JoinPage from "../routes/join/JoinPage.jsx";
+import JetEnginePage from "../routes/projects/JetEnginePage.jsx";
+import ProjectsPage from "../routes/projects/ProjectsPage.jsx";
+import RocketA4Page from "../routes/projects/RocketA4Page.jsx";
+import SigmaPage from "../routes/projects/SigmaPage.jsx";
+import SponsorsPage from "../routes/sponsors/SponsorsPage.jsx";
+import TeamPage from "../routes/team/TeamPage.jsx";
+
 const router = createBrowserRouter([
     {
         path: "/",
