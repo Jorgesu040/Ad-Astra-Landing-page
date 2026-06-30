@@ -6,7 +6,7 @@ const navItems = [
         { label: "Sigma", to: "/projects/sigma" },
         { label: "Rocket A4", to: "/projects/rocket-a4" },
         { label: "Jet Engine", to: "/projects/jet-engine" },
-        { label: "Todos los proyectos", to: "/projects", individual: true },
+        { label: "Todos los proyectos", to: "/projects", hasDividerBefore: true },
     ],
   },
   { label: "Sponsors", to: "/sponsors" },

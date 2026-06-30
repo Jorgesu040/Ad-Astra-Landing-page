@@ -75,7 +75,7 @@ export default function Footer() {
 
 			<div className="relative mx-auto z-10 grid max-w-7xl gap-14 px-6 py-16 sm:px-8 ">
 				<section className="max-w-md" aria-label="AD ASTRA UC3M">
-					<h2 className="text-3xl text-brand-surface sm:text-4xl">Ad Astra</h2>
+					<h2 className="text-3xl text-brand-surface sm:text-4xl">Ad Astra {/*Cambiar por SVG logo*/}</h2>
 					<p className="mt-4 max-w-sm text-xl leading-8 text-brand-surface/85">
 						Ingeniería para llegar a las estrellas
 					</p>
